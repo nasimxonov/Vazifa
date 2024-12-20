@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cff5cf;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
+        "footer footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container div {
+    background-color: #00FF00;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content1 {
+    grid-area: content1;
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+.content3 {
+    grid-area: content3;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* aidan tushunmagan joylarimda foydalandim */
